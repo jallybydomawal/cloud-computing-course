@@ -1,23 +1,27 @@
-# Laboratory 03: Multi-Cloud Explorer
+# Checkpoint 7 – Linux Investigation & Cloud Migration Analysis
 
-## Overview
-This laboratory activity explores the core services, global infrastructure, and business deployment scenarios across three major public cloud platforms: Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP).
+## 1. System Investigation Details
 
-## Server Migration Analysis (KillerCoda Environment)
-- **Operating System:** Ubuntu / Linux (KillerCoda Playground)[cite: 1]
-- **CPU Cores:** 2 vCPUs[cite: 1]
-- **System Memory:** 4 GB RAM[cite: 1]
-- **Disk Space:** 30 GB SSD[cite: 1]
+* **Operating System:** Ubuntu 24.04 LTS (Noble Numbat) Linux x86_64 (`cat /etc/os-release`)
+* **CPU Information:** x86_64 Virtualized Cloud CPU Core (`lscpu`)
+* **Memory (RAM):** Total: 1.9 GiB | Used: 417 MiB | Available: 1.5 GiB (`free -h`)
+* **Disk Space:** Root Filesystem (`/dev/vda1`): 19 GB Total, 5.4 GB Used, 13 GB Available (`df -h`)
 
-### Target Cloud Host Mapping
-If this local/virtual Linux environment were migrated to the cloud, it could be hosted using equivalent compute services[cite: 1]:
-- **AWS:** Amazon EC2 (`t3.medium` instance)[cite: 1]
-- **Azure:** Azure Virtual Machines (`B2s` instance)[cite: 1]
-- **GCP:** Compute Engine (`e2-medium` instance)[cite: 1]
+---
 
-## Evidence Screenshots
-- AWS Homepage: `screenshots/aws-homepage.png`[cite: 1]
-- Azure Homepage: `screenshots/azure-homepage.png`[cite: 1]
-- GCP Homepage: `screenshots/gcp-homepage.png`[cite: 1]
-- Terminal Output: `screenshots/killercoda-terminal.png`[cite: 1]
-- Repository Layout: `screenshots/github-repository.png`[cite: 1]
+## 2. Terminal Output Screenshot
+
+![Linux Terminal Output](screenshots/linux-terminal.png)
+
+---
+
+## 3. Cloud Migration Strategy
+
+**Question:** *If this Linux server were migrated to the cloud, which AWS, Azure, and GCP services could host it?*
+
+* **Amazon Web Services (AWS):** **Amazon EC2 (Elastic Compute Cloud)**  
+  * *Reason:* Offers resizable cloud compute capacity supporting Ubuntu 24.04 LTS images.
+* **Microsoft Azure:** **Azure Virtual Machines**  
+  * *Reason:* Provides flexible, on-demand Linux VM instances with active enterprise support.
+* **Google Cloud Platform (GCP):** **Google Compute Engine (GCE)**  
+  * *Reason:* Delivers high-performance Linux VMs on Google's infrastructure with custom machine types.  
