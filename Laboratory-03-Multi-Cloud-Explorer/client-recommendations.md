@@ -41,3 +41,13 @@
   * **Amazon EC2 & Auto Scaling:** To dynamically scale web server capacity based on customer demand.
   * **Amazon CloudFront:** Content Delivery Network (CDN) to deliver low-latency assets globally.
   * **Amazon Aurora / DynamoDB:** Highly available database solutions for inventory and transaction tracking.
+## Multi-Cloud Decision Matrix
+
+| Business Requirement | Recommended Platform | Justification |
+| :--- | :--- | :--- |
+| **Startup Company** | Google Cloud Platform | Offers cost-effective pay-as-you-go serverless tools, generous free tiers, and fast development cycles. |
+| **Enterprise Organization** | Amazon Web Services | Features the most mature global infrastructure, broad service variety, and extensive compliance coverage. |
+| **Microsoft Environment** | Microsoft Azure | Guarantees seamless native compatibility with Windows Server, Active Directory, and Office 365 systems. |
+| **AI / Machine Learning** | Google Cloud Platform | Leads in AI innovation with specialized Tensor Processing Units (TPUs) and the Vertex AI platform. |
+| **Kubernetes Deployment** | Google Cloud Platform | As the original creator of Kubernetes, GCP offers the most optimized and mature managed GKE environment. |
+| **Global Web Application** | Amazon Web Services | Delivers unmatched worldwide reach, low latency via Amazon CloudFront, and robust dynamic auto-scaling. |
